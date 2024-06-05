@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame 2</title>
+    <style>
+        p {
+            font-family: Times New Roman, Arial;
+            font-size: 18px;
+            color: lightgreen;
+        }
+
+        .second-font {
+            font-family: 'Times New Roman', Times, arial;
+            font-size: 25px;
+            color: pink;
+        }
+
+        body {
+            background-image: url('https://raw.githubusercontent.com/komalpreetkaurdhaliwal042/my_website/main/yourimage.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    
+<p>My name is Koalpreet Kaur Dhaliwal.</p>
+<p class="second-font">I like to listen to music and watch movies.</p>
+<audio src="https://raw.githubusercontent.com/komalpreetkaurdhaliwal042/my_website/main/melody-of-nature-main(chosic.com).mp3" autoplay loop></audio>
+
+</body>
+</html>
