@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame 1</title>
+</head>
+<body>
+
+<h2>Komalpreet Kaur Dhaliwal</h2>
+<img src="https://github.com/komalpreetkaurdhaliwal042/my_website/blob/main/yourimage.jpg?raw=true" alt="Your Photo">
+
+</body>
+</html>
