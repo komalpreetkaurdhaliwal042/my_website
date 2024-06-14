@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Average</title>
+  <style>
+    #result {
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test Score Average</h1>
+  <script>
+    function calculateAverage() {
+      var score1 = (prompt("Enter test score 1:"));
+      var score2 = (prompt("Enter test score 2:"));
+      var score3 = (prompt("Enter test score 3:"));
+
+      var average = (score1 + score2 + score3) / 3;
+
+      document.getElementById("result").value = average.toFixed(2);
+    }
+  </script>
+  <p>Scores:</p>
+  <button onclick="calculateAverage()">Calculate Average</button>
+  <br> Average<br>
+  <input type="text" id="result" readonly>
+</body>
+</html>
