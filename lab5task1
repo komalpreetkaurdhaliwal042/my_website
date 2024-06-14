@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Forms</title>
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+
+<h2>First Form</h2>
+
+<form>
+  <label for="fname">TEXT BOX:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="radio" id="choice1" name="fav_language" value="choice #1">
+  <label for="choice1">choice #1</label><br>
+  <input type="radio" id="choice2" name="fav_language" value="choice #2">
+  <label for="choice2">choice #2</label><br><br>
+  <textarea id="textarea" name="text area" rows="4" cols="50">Komalpreet Kaur Dhaliwal</textarea>
+</form>
+
+<h2>Second Form</h2>
+
+<form>
+  <input type="checkbox" id="check1" name="check1" value="choice #1">
+  <label for="check1">choice #1</label><br>
+  <input type="checkbox" id="check2" name="check2" value="choice #2">
+  <label for="check2">choice #2</label><br>
+  <input type="checkbox" id="check3" name="check3" value="choice #3">
+  <label for="check3">choice #3</label><br><br>
+  <button>Button!</button><br><br>
+  <select id="dropdown" name="dropdown">
+    <option value="Komalpreet Kaur Dhaliwal">Komalpret Kaur Dhaliwal</option>
+    <option value="Math">Math</option>
+    <option value="Physics">Physics</option>
+    <option value="Economic">Economic</option>
+  </select>
+</form>
+
+</body>
+</html>
