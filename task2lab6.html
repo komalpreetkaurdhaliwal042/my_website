@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .green-text {color: green;}
+  </style>
+</head>
+<body>
+  <h1>Test Scores</h1>
+  <label for="score1">Enter test score 1:</label>
+  <input type="text" id="score1"><br>
+  <label for="score2">Enter test score 2:</label>
+  <input type="text" id="score2"><br>
+  <button onclick="calculateAverage()">Calculate Average</button><br><br>
+  <textarea id="result" rows="4" cols="50"></textarea>
+  <script>
+    function calculateAverage() {
+      var score1 = Number(document.getElementById("score1").value);
+      var score2 = Number(document.getElementById("score2").value);
+      var average = (score1 + score2) / 2;
+      var resultBox = document.getElementById("result");
+
+      if (average >= 86 && average <= 100) {resultBox.value = "Good Performance";} else if (average >= 66 && average <= 75) {resultBox.value = "Normal";} else if (average >= 0 && average <=65) {resultBox.value = "Poor Performance";}
+
+  resultBox.classList.add("green-text");}
+  </script>
+</body>
+</html>
