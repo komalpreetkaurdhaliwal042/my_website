@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+}
+
+table, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+img {
+  width: 100px;
+  height: 150px;
+}
+
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <td><img src="https://github.com/komalpreetkaurdhaliwal042/my_website/blob/main/yourimage.jpg?raw=true" alt="Your Photo"</td>
+    <td><button onclick="playVideo()">VIDEO</button> <br>
+    <button onclick="playSong()">Song</button></td>
+    <td></td>
+    <td colspan="17"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><img         src="https://github.com/komalpreetkaurdhaliwal042/my_website/blob/main/tiger.jpg?raw=true"</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Komalpreet Kaur Dhaliwal</td>
+    <td></td>
+    <td>813988</td>
+    <td></td>
+  </tr>
+</table>
+
+<script>
+function playSong() {
+  var audio = new Audio('https://github.com/komalpreetkaurdhaliwal042/my_website/raw/main/Musicphrase-Jingle-Bells-Ukulele(chosic.com).mp3');
+  audio.play();
+}
+
+function playVideo() {
+  var video = document.createElement('video');
+  video.src = 'https://raw.githubusercontent.com/komalpreetkaurdhaliwal042/my_website/main/854739-hd_1920_1080_30fps.mp4';
+  video.controls = true;
+  video.autoplay = true;
+  document.body.appendChild(video);
+}
+</script>
+
+</body>
+</html>
