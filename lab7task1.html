@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess Program</title>
+  <script>
+    function runGuess() {
+      var name = document.getElementById("nameInput").value;
+      var guess = Number(document.getElementById("guessInput").value);
+      var randomNum = Number(document.getElementById("randomNumber").value); // Get the random number entered by the user
+
+      if (guess > randomNum) {
+        document.getElementById("status").innerText = name + ", you win!";
+      } else if (guess < randomNum) {
+        document.getElementById("status").innerText = name + ", you lose!";
+      } else {
+        document.getElementById("status").innerText = "Exactly the same!";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Guess Program</h1>
+  <label for="nameInput">Your name:</label>
+  <input type="text" id="nameInput"><br><br>
+  <label for="guessInput">Guess number (0 to 10):</label>
+  <input type="number" id="guessInput" min="0" max="10"><br><br>
+  <label for="randomNumber">Random Number:</label>
+  <input type="number" id="randomNumber" min="0" max="10"><br><br>
+  <button onclick="runGuess()">RUN</button><br><br>
+  <label for="status">Status:</label>
+  <textarea id="status" rows="4" cols="50" readonly></textarea>
+</body>
+</html>
