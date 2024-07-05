@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #box {width: 300px;height: 500px;border: 1px solid black;margin-bottom: 20px;position:fixed; left:300px; top:90px;}
+    
+    #message {font-size: 30px; position: relative;animation: moveText 5s linear infinite;color:blue;}
+    
+    @keyframes moveText { 0% { left: 0; }100% { left: calc(100% - 200px); }}
+  </style>
+</head>
+<body>
+  <p id="message">Jungle in Africa</p><br>
+  <input type="radio" onclick="showImage('https://github.com/komalpreetkaurdhaliwal042/my_website/blob/main/yourimage.jpg?raw=true')">Photo of yoursef</button><br>
+  <input type="radio" onclick="showImage('https://github.com/komalpreetkaurdhaliwal042/my_website/blob/main/tiger.jpg?raw=true')">Tiger</button>
+  <div id="box"; right="100%"; left="0%";></div>
+  <script>
+    function showImage(imageURL) {
+      var box = document.getElementById('box');
+      box.style.backgroundImage = "url('" + imageURL + "')";
+      box.style.backgroundSize = "cover";
+    }
+  </script>
+</body>
+</html>
