@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Political System in India</title>
+</head>
+<body>
+
+
+<header>
+    <h1>Political System in India</h1>
+</header>
+
+
+<nav>
+    <ul>
+        <li><a href="#Bhartaiya Janta Party">Bhartaiya Janta Party</a></li>
+        <li><a href="#Indian National Congress">Indian National Congress</a></li>
+    </ul>
+</nav>
+
+<!
+<main>
+  
+    <section id="Bhartaiya Janta Party">
+        <h2>Bhartaiya Janta Party</h2>
+        <p>
+           <h3> BJP is the ruling party in India </h3>
+ The Bharatiya Janata Party (BJP) is a major political party in India known for its ideology of Hindutva, nationalism, and economic liberalism. Founded in 1980, it has seen significant electoral success, culminating in Narendra Modi becoming Prime Minister in 2014. The BJP has implemented initiatives like "Make in India" and Swachh Bharat Abhiyan, but has also faced criticism for its handling of religious minorities and economic policies. 
+
+
+        </p>
+
+        
+        <img src="https://github.com/komalpreetkaurdhaliwal042/my_website/blob/main/Screenshot%202024-07-22%20202427.png?raw=true" alt="Narendra Modi and symbol of BJP">
+      
+
+    
+    <section id="Indian National Congress">
+        <h2>Indian National Congress</h2>
+        <p><h3>INC is the opposition party in India </h3>
+The Indian National Congress (INC) is one of India's oldest and largest political parties, founded in 1885 during British colonial rule. It played a crucial role in India's independence movement and has historically advocated for secularism, democratic socialism, and social justice. Led by prominent figures like Jawaharlal Nehru and Indira Gandhi, it has formed several national governments. The INC has implemented economic reforms and social welfare initiatives but has faced criticism for issues such as corruption and dynastic politics. It remains a significant player in Indian politics, though it has encountered electoral challenges in recent years.
+        </p>
+
+        
+        <img src="https://github.com/komalpreetkaurdhaliwal042/my_website/blob/main/Screenshot%202024-07-22%20202500.png?raw=true" alt="Rahul Gandhi and symbol of INC ">
+       
+</P>
+<body>
+    <h1>Select a party to watch the video:</h1>
+    <label>
+        <input type="radio" name="state" value="Bhartaiya Janta Party"> Bhartaiya Janta Party
+    </label>
+    <label>
+        <input type="radio" name="state" value="Indian National Congress"> Indian National Congress
+    </label>
+    <button onclick="playVideo()">Play Video</button>
+
+    <div id="videoPlayer"></div>
+
+    <script>
+        function playVideo() {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const state = document.querySelector('input[name="state"]:checked').value;
+
+            
+            let videoURL;
+            if (state === 'Bhartaiya Janta Party') {
+                videoURL = 'https://www.youtube.com/embed/b2VncZ0gPbg?si=N4CiijLjbPVoxAE';
+            } else if (state === 'Indian National Congress') {
+                videoURL = 'https://www.youtube.com/embed/zyv95Vmjf-A?si=NRO7h8-cavMmGh7Z';
+            } else {
+                
+                videoPlayer.innerHTML = '<p>Please select a state before playing the video.</p>';
+                return;
+            }
+
+            
+            videoPlayer.innerHTML = `<iframe width="640" height="360" src="${videoURL}" frameborder="0" allowfullscreen></iframe>`;
+        }
+    </script>
+</body>
+
+
+
+<footer>
+    <p>Contact us:Komalpreet Kaur Dhaliwal: 813988@columbiacollege.ca , Jaspreet Kaur :814412@columbiacollege.ca</p>
+</footer>
+
+
+</body>
+</html>
